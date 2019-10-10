@@ -199,6 +199,7 @@ module.exports = {
       'script!jqueryTextcomplete',
       'script!codemirrorSpellChecker',
       'script!codemirrorInlineAttachment',
+      'script!codemirror-composition-mod',
       'script!ot',
       'flowchart.js',
       'js-sequence-diagrams',

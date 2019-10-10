@@ -8,6 +8,7 @@ const defaultEditorMode = 'gfm'
 const viewportMargin = 20
 
 const jumpToAddressBarKeymapName = isMac ? 'Cmd-L' : 'Ctrl-L'
+require('codemirror-composition-mod')(CodeMirror);
 
 export default class Editor {
   constructor () {
@@ -474,6 +475,7 @@ export default class Editor {
       lineWrapping: true,
       showCursorWhenSelecting: true,
       highlightSelectionMatches: true,
+      enableCompositionMod: true,
       indentUnit: 4,
       continueComments: 'Enter',
       theme: 'one-dark',
